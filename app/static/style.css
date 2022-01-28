@@ -12,7 +12,7 @@ ul > li{
     border-radius: 1.25rem;
 }
 ul > li:hover{
-    transform :scale(1.05);
+    transform :scale(1.02);
 }
 ul > li> h2 {
     color: #ff4800;
