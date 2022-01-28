@@ -10,4 +10,5 @@ def index():
     report= json.loads(articles.content)
     final= report['articles']
     publish = final[0]
-    return render_template('index.html', data= final , outlet= publish)
+    length = len(final)
+    return render_template('index.html', data= final , outlet= publish, length = length)
