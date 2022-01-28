@@ -10,8 +10,8 @@
                 <h1> {{ data[i]['title']}} </h1>
                 <h2> {{ data[i]['author']}} <h2>
                 <p> {{data[i]['description']}} </p>
+                <p>Source:{{data[i]['source']['name']}}</p>
             </li>
-            <p>Source:{{data[i]['source']['name']}}</p>
             {%endfor%}
             
         </ul>

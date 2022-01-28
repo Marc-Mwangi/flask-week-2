@@ -4,9 +4,11 @@
 }
 ul {
     list-style: none;
+    padding: auto;
 }
 ul > li{
-
+    margin: auto;
+    width: 70vh ;    
     border: 4px solid #ff4800;
     padding: 1.2rem;
     border-radius: 1.25rem;
