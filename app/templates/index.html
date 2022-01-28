@@ -1,3 +1,8 @@
 <div>
-    <h1>{{ data }}</h1>
+    {{outlet}}
+    <div>
+        {% for datas in data%}
+        <span>{ datas['articles']}</span>
+        {%endfor%}
+    </div>
 </div>
