@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../static/style.css"
 <div>
     
     <div>
@@ -5,12 +6,12 @@
         <ul>
             
             {% for i in range(0,length) %}
-            <p>Source:{{data[i]['source']['name']}}</p>
             <li>
                 <h1> {{ data[i]['title']}} </h1>
                 <h2> {{ data[i]['author']}} <h2>
                 <p> {{data[i]['description']}} </p>
             </li>
+            <p>Source:{{data[i]['source']['name']}}</p>
             {%endfor%}
             
         </ul>
