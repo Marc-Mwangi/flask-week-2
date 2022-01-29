@@ -8,8 +8,13 @@
     <body>
         <div class="feed">
             <h1>Testing Inheritance</h1>
-            {% block content %}
-            {% endblock %}
+           <div class="feed_data">
+               
+                {% block content %}
+                    {% include 'index.html' %}
+                {% endblock %}
+               
+            </div>
         </div>
     </body>
 </html>
