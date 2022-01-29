@@ -6,10 +6,15 @@
 
     </head>
     <body>
+        <nav>
+            {% include 'navbar.html' %}
+        </nav>
+        
         <div class="feed">
-            <h1>Testing Inheritance</h1>
+           
            <div class="feed_data">
-               
+            
+
                 {% block content %}
                     {% include 'index.html' %}
                 {% endblock %}

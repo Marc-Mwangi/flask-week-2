@@ -6,11 +6,6 @@
     color: white;
     width: 100vw;
     position: relative;
-    
-
-    
-
-    
 }
 .feed_data > .news > div > ul> li > img{
     position: inherit;
@@ -20,19 +15,24 @@
     list-style: none;
 }
 .feed_data > .side{
-    background-color: red;
+    background-color: rgb(255, 102, 0);
     position: fixed;
-    width: 25%;
+    width: 24%;
     display: inline;
     float: left;
     height: 88vh;
+    text-align: center;
 }
 .feed_data > .news{
     display: inline;
     position: relative;
-    left: 20%;
+    left: 22%;
 
 }
 .feed_data > .news> div{
     width: 75%;
+}
+.side > ul >li{
+    list-style: none;
+    padding: 5%;
 }
