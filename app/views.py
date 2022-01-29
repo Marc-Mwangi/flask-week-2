@@ -11,4 +11,10 @@ def index():
     final= report['articles']
     publish = final[0]
     length = len(final)
-    return render_template('index.html', data= final ,report =report, outlet= publish, length = length)
+    m=[]
+    for i in range(0,length):
+            if final[i]['source']['name'] not in m:
+                m.append(final[i]['source']['name'])
+    v = m
+    l= len(v)
+    return render_template('index.html', data= final ,report =report, outlet= publish, v=v, l=l, length = length)

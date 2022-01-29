@@ -25,6 +25,7 @@
     width: 25%;
     display: inline;
     float: left;
+    height: 88vh;
 }
 .feed_data > .news{
     display: inline;

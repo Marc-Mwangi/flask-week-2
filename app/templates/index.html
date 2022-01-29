@@ -5,11 +5,20 @@
 {% block content %} 
 
 <div class="side">
-    <p>Hello</p>
+    <ul>
+        {% for i in range(0,l)%}
+        <li>
+            {{v[i]}}
+            
+        </li>
+        {% endfor %}
+
+    </ul>
 </div>
 
 
 <div class="news">
+    
    
     <div>
         
