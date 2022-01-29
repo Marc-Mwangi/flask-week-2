@@ -8,14 +8,18 @@ ul {
 }
 ul > li{
     margin: auto;
-    width: 70vh ;    
+    width: 90vh ;    
     border: 4px solid #ff4800;
     padding: 1.2rem;
     border-radius: 1.25rem;
 }
 ul > li:hover{
-    transform :scale(1.02);
+    transform :scale(1.01);
 }
 ul > li> h2 {
     color: #ff4800;
+}
+ul > li> img{
+    position: inherit;
+    width: 100%;
 }

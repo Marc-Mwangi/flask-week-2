@@ -11,4 +11,4 @@ def index():
     final= report['articles']
     publish = final[0]
     length = len(final)
-    return render_template('index.html', data= final , outlet= publish, length = length)
+    return render_template('index.html', data= final ,report =report, outlet= publish, length = length)
