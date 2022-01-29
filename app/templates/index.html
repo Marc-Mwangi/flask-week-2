@@ -4,7 +4,9 @@
 
 {% block content %} 
 
+
 <div class="side">
+    
     <h2>Sources</h2>
     <ul>
         {% for i in range(0,l)%}
@@ -33,6 +35,7 @@
                 <h2> {{ data[i]['author']}} <h2>
                 <p> {{data[i]['description']}} </p>
                 <p>Source:{{data[i]['source']['name']}}</p>
+                <p>{{data[i]['publishedAt']}}</p>
             </li>
             {%endfor%}
             
