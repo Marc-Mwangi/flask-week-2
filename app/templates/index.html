@@ -36,10 +36,10 @@
                 <a href="{{data[i]['url']}}" target="_blank">
                     <img src= {{data[i]['urlToImage']}}>
                     <h1> {{ data[i]['title']}} </h1>
-                    <h2> {{ data[i]['author']}} </h2>
+                    <h2 class="orange"> {{ data[i]['author']}} </h2>
                     <p> {{data[i]['description']}} </p>
-                    <p>Source:{{data[i]['source']['name']}}</p>
-                    <p>{{data[i]['publishedAt']}}</p>
+                    <p class="orange">Source:{{data[i]['source']['name']}}</p>
+                    <p class="orange">{{data[i]['publishedAt']}}</p>
                 </a>
             </li>
             {%endfor%}

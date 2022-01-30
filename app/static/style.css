@@ -76,3 +76,6 @@ nav {
     text-decoration: none;
     color: white;
 }
+.feed_data > .news > div > ul> li > a > .orange {
+    color: rgb(255, 102, 0);
+}
