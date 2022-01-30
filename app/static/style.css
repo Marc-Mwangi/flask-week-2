@@ -18,7 +18,7 @@ body{
 }
 .feed_data > .news > div > ul> li > a > img{
     position: inherit;
-    width: 100%;    
+    width: 90%;    
 }
 .feed_data > .news > div > ul{
     list-style: none;
@@ -78,4 +78,18 @@ nav {
 }
 .feed_data > .news > div > ul> li > a > .orange {
     color: rgb(255, 102, 0);
+}
+.feed_data > .side > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+.feed_data > .side > ul > li > a:hover {
+    color: black;
+}
+.navi > h2 > a {
+    text-decoration: none;
+    color: white;
+}
+.navi > h2 > a:hover{
+    color: black;
 }

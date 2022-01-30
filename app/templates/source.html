@@ -9,8 +9,10 @@
     
     <h2>Sources</h2>
     <ul>
+        
         {% for i in range(0,l)%}
         <li>
+
             <a href="http://127.0.0.1:5000/outlet/{{v[i]}}">
                 {{v[i]}}
             </a>
@@ -24,29 +26,22 @@
 
 
 <div class="news">
-    
- 
-   
     <div>
-        
         <ul>
             
-            {% for i in range(0,length) %}
-            <li>
+                {% for i in range(0 , ld)%}
+            <li>    
                 <a href="{{data[i]['url']}}" target="_blank">
                     <img src= {{data[i]['urlToImage']}}>
                     <h1> {{ data[i]['title']}} </h1>
                     <h2 class="orange"> {{ data[i]['author']}} </h2>
                     <p> {{data[i]['description']}} </p>
                     <p class="orange">Source:{{data[i]['source']['name']}}</p>
-                    <p class="orange">{{data[i]['publishedAt']}}</p>
+                    <p class="orange">{{data[i]['publishedAt']}}</p>    
                 </a>
+                {% endfor %}
             </li>
-            {%endfor%}
-            
         </ul>
-
-        
     </div>
 </div>
 {% endblock %}

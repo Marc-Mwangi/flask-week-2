@@ -6,7 +6,7 @@
 
     </head>
     <body>
-        <nav>
+        <nav class="navi">
             {% include 'navbar.html' %}
         </nav>
         
@@ -17,6 +17,8 @@
 
                 {% block content %}
                     {% include 'index.html' %}
+                    {% include 'source.html' %}
+                    
                 {% endblock %}
                
             </div>
