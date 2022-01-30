@@ -11,7 +11,9 @@
     <ul>
         {% for i in range(0,l)%}
         <li>
-            {{v[i]}}
+            <a>
+                {{v[i]}}
+            </a>
             
         </li>
         
@@ -23,6 +25,7 @@
 
 <div class="news">
     
+ 
    
     <div>
         
@@ -30,12 +33,14 @@
             
             {% for i in range(0,length) %}
             <li>
-                <img src= {{data[i]['urlToImage']}}>
-                <h1> {{ data[i]['title']}} </h1>
-                <h2> {{ data[i]['author']}} <h2>
-                <p> {{data[i]['description']}} </p>
-                <p>Source:{{data[i]['source']['name']}}</p>
-                <p>{{data[i]['publishedAt']}}</p>
+                <a href="{{data[i]['url']}}" target="_blank">
+                    <img src= {{data[i]['urlToImage']}}>
+                    <h1> {{ data[i]['title']}} </h1>
+                    <h2> {{ data[i]['author']}} </h2>
+                    <p> {{data[i]['description']}} </p>
+                    <p>Source:{{data[i]['source']['name']}}</p>
+                    <p>{{data[i]['publishedAt']}}</p>
+                </a>
             </li>
             {%endfor%}
             
