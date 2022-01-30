@@ -7,21 +7,23 @@
 
     </head>
     <body>
-        <nav class="navi">
-            {% include 'navbar.html' %}
-        </nav>
-        
-        <div class="feed">
-           
-           <div class="feed_data">
+            <div id="all">
+            <nav class="navi">
+                {% include 'navbar.html' %}
+            </nav>
             
+            <div class="feed">
+            
+            <div class="feed_data">
+                
 
-                {% block content %}
-                    {% include 'index.html' %}
-                    {% include 'source.html' %}
-                    
-                {% endblock %}
-               
+                    {% block content %}
+                        {% include 'index.html' %}
+                        {% include 'source.html' %}
+                        
+                    {% endblock %}
+                
+                </div>
             </div>
         </div>
     </body>
